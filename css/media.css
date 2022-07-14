@@ -1,0 +1,8 @@
+@media only screen and (max-width: 769px) {
+  .Comments .owl-carousel .owl-nav button {
+    display: none; }
+
+  footer nav .container-fluid {
+    flex-direction: column; } }
+
+/*# sourceMappingURL=media.css.map */
