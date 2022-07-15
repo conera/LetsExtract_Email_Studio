@@ -9,21 +9,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Nunito:wght@800&display=swap"
           rel="stylesheet">
-
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href=css/media.css>
     <title>LetsExtract</title>
+
 
 
 </head>
 <body>
 <header id="header">
     <div class="container">
-        <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-light  ">
+        <div class="row align-items-center">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <div class="d-flex flex-column align-items-start">
                         <a class="navbar-brand" href="#"><img src="img/LetsExtract-Email-Studio.svg" alt="logo"></a>
@@ -51,21 +48,22 @@
                                 <a class="nav-link" href="#">Поддержка</a>
                             </li>
                         </ul>
-                        <a class="btn-link" href="#">Скачать</a>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                RU
-                            </button>
-                            <ul class="dropdown-menu text-end" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#">UK</a></li>
-                                <li><a class="dropdown-item" href="#">EN</a></li>
-                            </ul>
-                        </div>
+
 
                     </div>
                 </div>
             </nav>
+            <a class="btn-link" href="#">Скачать</a>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                    RU
+                </button>
+                <ul class="dropdown-menu text-end" id="mydiv" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">UK</a></li>
+                    <li><a class="dropdown-item" href="#">EN</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </header>
@@ -79,8 +77,8 @@
                     лидов, телефонов и других контактов</p>
                 <a href="#" class="btn-link">Скачать сейчас</a>
             </div>
-            <div class="col-12 col-lg-4 offset-lg-1">
-                <img src="img/undraw_personal_email_re.png" alt="person">
+            <div class="col-12 col-lg-4 offset-lg-1 img_box">
+                <img class="w-100 d-block" src="img/undraw_personal_email_re.png" alt="person">
             </div>
         </div>
     </div>
@@ -433,7 +431,9 @@
             </div>
             <div class="col-12">
                 <div class="box">
-                    <img src="img/meeting.png" alt="">
+                    <div class="img_box">
+                    <img class="w-100 d-block" src="img/meeting.png" alt="">
+                    </div>
                     <div>
                         <h3>100% ручная работа экспертов!</h3>
                         <p>LetsExtract был разработан профессионалами с более чем 5-летним стажем в сфере разработки
@@ -455,7 +455,9 @@
             </div>
             <div class="col-12">
                 <div class="box">
-                    <img src="img/workspace.png" alt="">
+                    <div class="img_box">
+                    <img class="w-100 d-block" src="img/workspace.png" alt="">
+                </div>
                     <div>
                         <h3>"Умные" фишки LetsExtract Email Studio</h3>
                         <p>Мы не будем раскрывать всех секретов. Приведем лишь ПАРУ примеров. Как вы поняли из описания
@@ -478,7 +480,9 @@
             </div>
             <div class="col-12">
                 <div class="box">
-                    <img src="img/working.png" alt="">
+                    <div class="img_box">
+                    <img class="w-100 d-block" src="img/working.png" alt="">
+                </div>
                     <div>
                         <h3>"Швейцарский нож" интернет-маркетолога</h3>
                         <p>Просто задайте себе вопрос, видели ли вы столько инструметов в одном продукте за такую цену?
@@ -820,7 +824,7 @@
                     отклыдвайте
                     на завтра. Щелкните здесь, чтобы скачать бесплатную демо версию программы.</p>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
                 <img src="img/awards-2016.png" alt="">
                 <img src="img/pc.png" alt="">
             </div>
@@ -861,13 +865,18 @@
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <nav class="navbar navbar-expand-sm  navbar-light  ">
+            <nav class="navbar navbar-expand navbar-light">
                 <div class="container-fluid">
                     <div class="d-flex flex-column align-items-start">
                         <a class="navbar-brand" href="#"><img src="img/LetsExtract-Email-Studio.svg" alt="logo"></a>
                         <span class="me-3">софт для email-маркетинга и SMM</span>
                     </div>
-                    <div class="collapse navbar-collapse justify-content-around" id="">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-around" >
                         <ul class="navbar-nav  mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#">Главная</a>
@@ -885,43 +894,48 @@
                             </li>
                         </ul>
 
+                        <a class="btn-link" href="#">Скачать</a>
                     </div>
-                    <a class="btn-link" href="#">Скачать</a>
                 </div>
-
             </nav>
-
-
         </div>
 
-        <hr>
-        <div class="row justify-content-between">
-
-            <span><a href="#">Как стать партнером | Политика конфиденциальности</a></span>
 
 
-            <span>Техподдержка: <a href="#">support@letsextract.com</a></span>
 
 
-            <span>По вопросам покупки: <a href="#">sales@letsextract.com</a></span>
+
+    <hr>
+    <div class="row">
+
+        <span><a href="#">Как стать партнером | Политика конфиденциальности</a></span>
 
 
-        </div>
+        <span>Техподдержка: <a href="#">support@letsextract.com</a></span>
+
+
+        <span>По вопросам покупки: <a href="#">sales@letsextract.com</a></span>
+
+
+    </div>
+    </div>
 
     </div>
     <div class="under-footer">
         <span>2017-2022 © LetsExtract Software. Все права защищены.</span>
     </div>
 </footer>
+
+
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
         crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+
 <script src="js/owl.carousel.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/script-owl.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/bootstrap.bundle.js"></script>
-<script src="https://kit.fontawesome.com/61f6556905.js" crossorigin="anonymous"></script>
 
+<script src="https://kit.fontawesome.com/61f6556905.js" crossorigin="anonymous"></script>
 <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
 </body>
 </html>
